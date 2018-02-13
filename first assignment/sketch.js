@@ -6,10 +6,11 @@
 function setup() {
   createCanvas(windowWidth, windowHeight);
   noStroke();
+  background(192, 192, 192);
 }
 
-function draw() {
-  background(0);
-  rect(windowWidth / 2, windowHeight / 2, 100, 100)
+function draw() {}
 
+function randomBalls() {
+  ellipse(random(windowWidth), random(windowHeight), 50, 255);
 }
