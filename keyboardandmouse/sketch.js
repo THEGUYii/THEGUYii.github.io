@@ -1,12 +1,10 @@
-// mouse and keyboard interaction
+// Mouse and Keyboard Interaction
 // Noah Flynn
-// Feb 9, 2018
+// Feb 12, 2018
 
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  document.addEventListener("contextmenu", event => event.preventDefault())
-}
 
 function draw() {
 

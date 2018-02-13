@@ -6,7 +6,7 @@ function setup() {
 }
 
 function draw() {
-  if (lightSwitch === true
+  if (lightSwitch === true);
 }
 
 function keyTyped() {
