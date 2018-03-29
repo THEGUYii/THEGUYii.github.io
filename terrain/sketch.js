@@ -5,6 +5,11 @@
 let heights = [];
 let numberOfRectangles;
 let rectWidth = width / numberOfRectangles;
+let flag;
+
+function preload() {
+  flag = loadImage("images/CanadianFlag.png");
+}
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -15,6 +20,7 @@ function setup() {
 function draw() {
   background(255);
   displayTerrain();
+  placeFlag();
 }
 
 function generateInitialTerrain(numberOfRectangles) {
@@ -31,6 +37,7 @@ function generateInitialTerrain(numberOfRectangles) {
 function placeFlag() {
   let tallest = 0;
   let highestX = 0;
+  let rectWidth = width / numberOfRectangles;
   for (let i = 0; i < heights.length; i++) {
     if (heights[i] > tallest) {
       tallest = heights[i];
@@ -39,12 +46,11 @@ function placeFlag() {
   }
 
   let highestY = height - tallest;
-  stroke(255, 0, 0);
-  line(0, tallest, width, tallest);
 
   // Flag
   fill(255, 0, 0);
   ellipse(highestX, highestY, 20, 20);
+  image(flag, highestX, highestY);
 }
 
 function displayTerrain() {
