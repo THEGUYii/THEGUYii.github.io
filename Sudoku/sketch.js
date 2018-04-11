@@ -1,4 +1,4 @@
-// Tic Tac Toe
+// Sudoku
 // Noah Flynn
 // March 29 2018
 

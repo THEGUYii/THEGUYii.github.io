@@ -2,8 +2,8 @@
 // Dan Schellenberg
 // Mar 26, 2018
 
-let rows = 30;
-let cols = 30;
+let rows = 25;
+let cols = 25;
 let grid;
 let cellSize;
 let autoPlay;
@@ -27,7 +27,7 @@ function draw() {
 }
 
 function autoPlayIfRequired() {
-  if (autoPlay && frameCount % 10 === 0) {
+  if (autoPlay && frameCount % 5 === 0) {
     nextTurn();
   }
 }
