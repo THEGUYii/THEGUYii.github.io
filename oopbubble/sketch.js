@@ -1,19 +1,15 @@
-// OOP Demo (TIMER)
+// oop Bubble
 // Noah Flynn
 // 4/17/18
 
-let myTimer;
+
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  myTimer = new Timer(3000);
 }
 
 function draw() {
-  if (myTimer.isDone()) {
-    ellipse(random(width), random(height), random(25, 200), random(25, 255));
-    myTimer.reset(1000);
-  }
+  background(255);
 }
 
 class Timer {
