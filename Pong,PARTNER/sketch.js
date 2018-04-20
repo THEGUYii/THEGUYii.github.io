@@ -30,7 +30,7 @@ function displayGrid() {
 
 function enemyMovement(x, y) {
   if (enemy) {
-
+    uhhhhh
   }
 }
 
