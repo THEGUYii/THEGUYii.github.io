@@ -2,8 +2,8 @@
 // Noah Flynn
 // 3/26/18
 
-let cols = 10;
-let rows = 10;
+let cols = 50;
+let rows = 50;
 let grid;
 let cellSize;
 
